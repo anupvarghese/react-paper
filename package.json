@@ -1,0 +1,49 @@
+{
+  "name": "react-paper",
+  "version": "1.0.0",
+  "description": "React & Paper.js",
+  "main": "index.js",
+  "author": "Anoop Varghese",
+  "license": "MIT",
+  "scripts": {
+    "test": "nyc npm run spec",
+    "spec": "./node_modules/.bin/_mocha -R spec ./test/test_helper.js --recursive test/*_test.js",
+    "clean": "rimraf lib dist coverage",
+    "lint": "eslint src test",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-istanbul": "^0.12.2",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-istanbul": "^4.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.6.1",
+    "enzyme": "^2.8.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "istanbul": "^0.4.5",
+    "jsdom": "^9.12.0",
+    "mocha": "^3.2.0",
+    "nyc": "^10.2.0",
+    "rimraf": "^2.6.1",
+    "sinon": "^2.1.0",
+    "paper": "^0.10.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "peerDependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
