@@ -1,17 +1,9 @@
-import React, { Component } from 'react';
+import Paper from './Paper';
+import Layer from './Layer';
+import Circle from './Circle';
 
-class Paper extends Component {
-  componentDidMount() {
-
-  }
-
-  render() {
-    return (
-      <div>
-        PaperJS with React
-      </div>
-    );
-  }
-}
-
-export default Paper;
+export {
+  Paper,
+  Layer,
+  Circle,
+};
